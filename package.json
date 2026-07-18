@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/drehispellcasterinfo-source/Dr-Ehi-Spell-Caster-#readme",
   "dependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
     "next": "^16.2.10",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
