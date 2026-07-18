@@ -108,12 +108,16 @@ export default function Contact() {
           <div>
             <p className="text-accent text-2xl mb-2">📧</p>
             <p className="text-sm text-muted">Email</p>
-            <p className="text-accent font-semibold">contact@drehi.com</p>
+            <a href="mailto:drehispellcaster.info@gmail.com" className="text-accent font-semibold hover:opacity-80 transition-opacity">
+              drehispellcaster.info@gmail.com
+            </a>
           </div>
           <div>
-            <p className="text-accent text-2xl mb-2">📱</p>
-            <p className="text-sm text-muted">Phone</p>
-            <p className="text-accent font-semibold">+1 (555) 123-4567</p>
+            <p className="text-accent text-2xl mb-2">💬</p>
+            <p className="text-sm text-muted">WhatsApp</p>
+            <a href="https://wa.me/2349160947050" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:opacity-80 transition-opacity">
+              +234 916 094 7050
+            </a>
           </div>
           <div>
             <p className="text-accent text-2xl mb-2">🌍</p>

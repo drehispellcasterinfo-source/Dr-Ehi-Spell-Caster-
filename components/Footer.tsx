@@ -31,9 +31,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-accent mb-4">Connect</h4>
             <ul className="space-y-2 text-sm text-muted">
-              <li><a href="#" className="hover:text-accent transition-colors">Facebook</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Instagram</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Twitter</a></li>
+              <li><a href="mailto:drehispellcaster.info@gmail.com" className="hover:text-accent transition-colors">📧 Email</a></li>
+              <li><a href="https://wa.me/2349160947050" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">💬 WhatsApp</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">🌐 Social Media</a></li>
             </ul>
           </div>
         </div>
