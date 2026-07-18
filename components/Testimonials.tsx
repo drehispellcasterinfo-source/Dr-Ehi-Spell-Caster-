@@ -1,51 +1,18 @@
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Mitchell",
-    title: "CEO",
-    content:
-      "Dr Ehi completely changed my life. After the prosperity spell, my business grew beyond my wildest dreams. The results were incredible!",
-    rating: 5,
+    videoUrl:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vdfr_1783692173120-b9PtFdgi5aZyLjbOqqdRuP8OMax8O4.mp4",
   },
   {
     id: 2,
-    name: "James Chen",
-    title: "Entrepreneur",
-    content:
-      "I was skeptical at first, but the love spell worked wonders. I met my soulmate within weeks. Dr Ehi is the real deal.",
-    rating: 5,
+    videoUrl:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vdfr_1784204852227-5SW1bKRZwVfjqft8OHVR8LkaPDYLqp.mp4",
   },
   {
     id: 3,
-    name: "Maria Rodriguez",
-    title: "Therapist",
-    content:
-      "The healing rituals provided me with spiritual clarity I had been searching for years. Highly recommend to anyone seeking transformation.",
-    rating: 5,
-  },
-  {
-    id: 4,
-    name: "David Thompson",
-    title: "Student",
-    content:
-      "The success spell helped me pass my exams with flying colors. I finally feel confident and focused. Thank you, Dr Ehi!",
-    rating: 5,
-  },
-  {
-    id: 5,
-    name: "Lisa Anderson",
-    title: "Nurse",
-    content:
-      "After years of health struggles, the healing work Dr Ehi did for me made a real difference. I feel renewed and energized.",
-    rating: 5,
-  },
-  {
-    id: 6,
-    name: "Michael Brown",
-    title: "Artist",
-    content:
-      "The creative inspiration spell unlocked my artistic potential. My work is more authentic and fulfilling than ever before.",
-    rating: 5,
+    videoUrl:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/vdfr_1783788647882-kTn4RjjtUCcogODTzt6dWCSKaWiNWq.mp4",
   },
 ];
 
@@ -59,25 +26,18 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="p-6 bg-background rounded-lg border border-accent/20 hover:border-accent/50 transition-all"
+              className="bg-background rounded-lg border border-accent/20 hover:border-accent/50 transition-all overflow-hidden"
             >
-              <div className="flex gap-1 mb-4">
-                {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <span key={i} className="text-accent text-lg">
-                    ★
-                  </span>
-                ))}
-              </div>
-
-              <p className="text-muted mb-4 leading-relaxed">
-                &quot;{testimonial.content}&quot;
-              </p>
-
-              <div>
-                <p className="font-serif font-bold text-accent">
-                  {testimonial.name}
+              <video
+                src={testimonial.videoUrl}
+                controls
+                className="w-full aspect-video bg-black"
+                controlsList="nodownload"
+              />
+              <div className="p-4">
+                <p className="text-sm text-muted text-center">
+                  Client Testimonial
                 </p>
-                <p className="text-sm text-muted">{testimonial.title}</p>
               </div>
             </div>
           ))}
